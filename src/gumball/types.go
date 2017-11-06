@@ -3,7 +3,7 @@
 	Basic Version with Wercker
 */
 
-package gumball
+package main
 
 type gumballMachine struct {
 	Id            int

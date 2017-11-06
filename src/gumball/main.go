@@ -7,7 +7,6 @@ package main
 
 import (
 	"os"
-	"../gumball"
 )
 
 func main() {
@@ -17,6 +16,6 @@ func main() {
 		port = "3000"
 	}
 
-	server := gumball.NewServer()
+	server := NewServer()
 	server.Run(":" + port)
 }
