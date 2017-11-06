@@ -43,7 +43,7 @@ build:
     - script:
         name: go build
         code: |
-          go build 
+          go build ./src/main
 
     # Test the project
     - script:
