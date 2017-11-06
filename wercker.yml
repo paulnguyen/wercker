@@ -27,6 +27,7 @@ build:
     # Sets the go workspace and places you package
     # at the right place in the workspace tree
     - setup-go-workspace
+      gopath: .
 
     # Gets the dependencies
     - script:
@@ -49,6 +50,6 @@ build:
     - script:
         name: go test
         code: |
-          go test ./src/test
+          go test tests
 
 
