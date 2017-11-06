@@ -8,7 +8,7 @@ package main
 
 import (
 	"testing"
-	"gumball"
+	"../gumball"
 )
 
 func TestGumball(t *testing.T) {  

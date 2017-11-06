@@ -7,7 +7,7 @@ package main
 
 import (
 	"os"
-	"gumball"
+	"../gumball"
 )
 
 func main() {
