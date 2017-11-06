@@ -47,12 +47,15 @@ build:
           env
           go build ./src/gumball
 
-    # Test the project
+# Test the project
+test:
+  steps:
     - script:
         name: go test
         code: |
           go test ./src/tests/*
-
+          
+# Deploy Container
 deploy:
   steps:
     - internal/docker-push:
