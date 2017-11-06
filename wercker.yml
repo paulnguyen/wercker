@@ -59,6 +59,6 @@ deploy:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
         tag: $DOCKER_TAG
-        repository: paulnguyen/wercker/
+        repository: paulnguyen/wercker
         registry: https://registry.hub.docker.com
 
