@@ -4,7 +4,7 @@
 	Basic Version with Wercker
 */
 
-package test
+package tests
 
 import (
 	"testing"
