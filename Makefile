@@ -2,23 +2,23 @@
 all: clean
 
 clean: 
-	find . -name 'gumball' -type f -exec rm -f {} \; 
+	find . -name 'main' -type f -exec rm -f {} \; 
 	go clean
 
 format:
-	go fmt gumball
+	go fmt main
 
 install:
-	go install gumball
+	go install main
 
 build:
-	go build gumball
+	go build main
 
 test:
-	go test gumball
+	go test main
 
 start:
-	./gumball 
+	./main 
 
 test-ping:
 	curl localhost:3000/ping
