@@ -49,6 +49,6 @@ build:
     - script:
         name: go test
         code: |
-          go test test
+          go test ./src/test
 
 
