@@ -3,7 +3,7 @@
 	Basic Version with Wercker
 */
 
-package main
+package gumball
 
 import (
 	"encoding/json"

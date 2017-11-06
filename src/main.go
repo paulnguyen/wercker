@@ -1,0 +1,22 @@
+/*
+	Gumball API in Go (Version 1)
+	Basic Version with Wercker
+*/
+	
+package main
+
+import (
+	"os"
+	"gumball"
+)
+
+func main() {
+
+	port := os.Getenv("PORT")
+	if len(port) == 0 {
+		port = "3000"
+	}
+
+	server := gumball.NewServer()
+	server.Run(":" + port)
+}

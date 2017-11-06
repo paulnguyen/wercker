@@ -6,19 +6,19 @@ clean:
 	go clean
 
 format:
-	go fmt main
+	go fmt gumball
 
 install:
-	go install main
+	go install gumball
 
 build:
-	go build main
+	go build gumball
 
 test:
-	go test main
+	go test gumball
 
 start:
-	./main 
+	./gumball 
 
 test-ping:
 	curl localhost:3000/ping
