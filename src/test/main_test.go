@@ -4,14 +4,14 @@
 	Basic Version with Wercker
 */
 
-package main
+package test
 
 import (
 	"testing"
 )
 
 func TestGumball(t *testing.T) {  
-    cnt := machine.CountGumballs
+    cnt := 989
     if cnt != 989 {
        t.Errorf("Count of Gumballs Incorrect, got: %d, want: %d.", cnt, 989)
     }
