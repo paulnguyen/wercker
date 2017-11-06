@@ -44,6 +44,7 @@ build:
     - script:
         name: go build
         code: |
+          env
           go build ./src/gumball
 
     # Test the project
@@ -52,4 +53,12 @@ build:
         code: |
           go test ./src/tests/*
 
+deploy:
+  steps:
+    - internal/docker-push:
+        username: $DOCKER_USERNAME
+        password: $DOCKER_PASSWORD
+        tag: $DOCKER_TAG
+        repository: paulnguyen/wercker/
+        registry: https://registry.hub.docker.com
 
