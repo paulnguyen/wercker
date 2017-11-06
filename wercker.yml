@@ -44,7 +44,7 @@ build:
     - script:
         name: go build
         code: |
-          go build ./src/main
+          go build ./src/gumball
 
     # Test the project
     - script:

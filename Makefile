@@ -2,7 +2,7 @@
 all: clean
 
 clean: 
-	find . -name 'main' -type f -exec rm -f {} \; 
+	find . -name 'gumball' -type f -exec rm -f {} \; 
 	go clean
 
 format:
