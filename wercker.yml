@@ -43,12 +43,12 @@ build:
     - script:
         name: go build
         code: |
-          go build gumball
+          go build ./...
 
     # Test the project
     - script:
         name: go test
         code: |
-          go test gumball
+          go test ./...
 
 
