@@ -26,7 +26,7 @@ build:
   steps:
     # Sets the go workspace and places your package
     # at the right place in the workspace tree
-    - setup-go-workspace
+    - setup-go-workspace:
       package-dir: github.com/paulnguyen/wercker
 
     # Gets the dependencies
